@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+}
+
+
+
+.nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    list-style: none;
+
+}
