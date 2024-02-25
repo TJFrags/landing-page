@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: "Exo 2", sans-serif;
 }
 
 .header{
@@ -40,6 +41,12 @@ body{
 
 }
 
+.nav a:hover{
+    color:#3882f6;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
 .hero{
     margin: 2% 0;
     display: flex;
@@ -52,19 +59,21 @@ body{
 }
 
 .hero-text{
-    max-width: 400px;
+    width: 400px;
     align-self: flex-start;
     flex-grow: 1;
     flex-shrink: 1;
+    flex-basis: 0;
 
 }
 
 .hero-text h1{
     font-size: 48px;
+    margin: 0;
 }
 
 .hero-text p{
-    margin-bottom: 10;
+    margin-bottom: 15px;
     margin-top: 0;
     font-size: 18px;
     color: #E5E7EB;
@@ -85,12 +94,16 @@ body{
 .image{
     height: 301px;
     max-width: 451px;
-    flex-grow: 0;
+    flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: auto;
+    flex-basis: 0;
 }
 
-a{text-decoration: none;}
+a{text-decoration: none;
+    color: #E5E7EB;
+}
+
+
 
 img{height: 100%;
     width: 100%;
@@ -110,7 +123,7 @@ img{height: 100%;
 }
 .info-cards{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
 }
 
@@ -118,21 +131,19 @@ img{height: 100%;
     width: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: centers;
+    justify-content: center;
     align-items: center;
     text-align: center;
     
 }
 
 .info-image{
-    aspect-ratio: 1 / 1;
-    border-radius: 10%;
-    
+    aspect-ratio: 1 / 1;    
     width: 90%;
 }
 
 .info-image img{
-    border-radius: 10%;
+    border-radius: 15%;
     border: solid 5px #3882f6;
 
 
@@ -203,4 +214,34 @@ img{height: 100%;
     background-color: #1f2937;
     color: #E5E7EB;
     font-size: 12px;
+}
+
+@media  screen and (max-width: 800px) {
+    .header{height: 850px;}
+
+    .hero{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text{
+        align-self: center;
+    }
+
+    .info-cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .info-card{
+        width: 50%;
+        
+    }
+
+    .extra-info{
+        height: 500px;
+    }
 }
