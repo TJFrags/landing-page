@@ -26,6 +26,10 @@ body{
     background-color: transparent;
 }
 
+.fa-bars{
+    display: none;
+}
+
 .logo{
     font-size: 24px;
     font-weight: 900px;
@@ -238,6 +242,9 @@ img{height: 100%;
     .hero-text{
         align-self: center;
     }
+    .image{
+        flex-grow: 0;
+    }
 
     .info-cards{
         flex-direction: column;
@@ -259,5 +266,25 @@ img{height: 100%;
 
     .cto-row{
         height: 200px;
+
     }
+    
+
+    .fa-solid{
+        display: inline-block;
+        font-size: 20px;
+    
+    }
+
+    .nav ul{
+        text-align: right;
+        padding: 20px 20px;
+        position: absolute;
+        background-color: #1f2937;
+        flex-direction: column;
+        top: 0;
+        right: -300px;
+    }
+
+
 }

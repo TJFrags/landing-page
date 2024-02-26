@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-JDM Meuseum</title>
+    <script src="https://kit.fontawesome.com/a81590ecb5.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,17 +13,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script>
-        alert(window.screen.availWidth)
-    </script>
     <section class="header">
         <div class="nav">
-            <div class="logo">JDM   MEUSEUM</div>
-            <ul>
+            <div class="logo">JDM MEUSEUM</div>
+
+            <i class="fa-solid fa-bars" onclick="openMenue()"></i>
+            <ul id="nav">
+                <li><i class="fa-solid fa-xmark" onclick="closeMenue()"></i></li>
                 <li><a href="">Home</a></li>
                 <li><a href="">Information</a></li>
                 <li><a href="">Contact Us</a></li>
             </ul>
+            
+                
             </div>
         </div>
 
@@ -99,5 +103,22 @@
         copyright &copy; TJ Frags 2024
     </section>
 
+<script>
+    let links = document.getElementById("nav");
+    console.log(links);
+
+    function openMenue()
+    {
+        links.style.right = "0px";
+    }
+
+    function closeMenue()
+    {
+        console.log("GG");
+        links.style.right = "-200px";
+
+    }
+
+</script>
 </body>
 </html>
