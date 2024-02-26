@@ -27,7 +27,7 @@ body{
 }
 
 .fa-solid{
-    display: none !important;
+    display: none ;
 }
 
 .logo{
@@ -44,6 +44,7 @@ body{
     padding: 0;
     gap: 20px;
     list-style: none;
+
 
 }
 
@@ -271,7 +272,7 @@ img{height: 100%;
     
 
     .fa-solid{
-        display: inline-block;
+        display: inline;
         font-size: 20px;
     
     }
@@ -284,6 +285,8 @@ img{height: 100%;
         flex-direction: column;
         top: 0;
         right: -300px;
+        display: none;
+        transition: 0.5s;
     }
 
 
